@@ -4,6 +4,7 @@ from psycopg2.pool import SimpleConnectionPool
 from dotenv import load_dotenv
 import os
 
+
 # Carregar variáveis de ambiente
 load_dotenv()
 
