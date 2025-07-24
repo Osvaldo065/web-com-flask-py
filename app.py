@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 # Configurar Supavisor (pooler de transações do Supabase)
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres.nxfvcknoecdruyfabsqw:1Mingau*@aws-0-sa-east-1.pooler.supabase.com:6543/postgres")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres.nxfvcknoecdruyfabsqw:PASSWORD@aws-0-sa-east-1.pooler.supabase.com:6543/postgres")
 
 if not DATABASE_URL:
     raise ValueError("Erro: DATABASE_URL não está definida no .env")
